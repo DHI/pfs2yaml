@@ -38,8 +38,8 @@ def pfs2yaml(pfsstring):
             if s[-1] == "]":
                 s = s.replace("]",":")
 
-        s = (#s.replace("=",":")
-              s.replace("//","!")
+        s = (
+              s.replace("//","#")
               .replace("|","") # TODO
             )
 
