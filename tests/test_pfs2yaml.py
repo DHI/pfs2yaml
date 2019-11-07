@@ -10,12 +10,9 @@ def test_pfs_to_yaml():
         load(yaml)
 
 
-
 def test_pfs_to_dict():
         with open("tests/testdata/odense_rough.m3fm") as f:
                 pfs = f.read()
-
-        #yaml = pfs2yaml(pfs)
 
         d = pfs2dict(pfs)
 
