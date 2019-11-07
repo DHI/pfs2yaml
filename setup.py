@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="pfs2yaml",
     version="0.0.1",
-    install_requires=['pyyaml'],
+    install_requires=['pyyaml','click'],
     author="Henrik Andersson",
     author_email="jan@dhigroup.com",
     description="A package that can convert DHI pfs files to yaml",
@@ -20,4 +20,8 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: Windows 10",
     ],
+    entry_points='''
+        [console_scripts]
+        pfs2yaml=pfs2yaml.cli:cli
+    ''',
 )

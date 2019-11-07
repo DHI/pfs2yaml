@@ -59,3 +59,38 @@ FemEngineHD:
 >>> d["FemEngineHD"]["DOMAIN"]["layer_thickness"][3]
 0.3
 ```
+
+## Command line interface
+```
+C:\>pfs2yaml --help
+Usage: pfs2yaml [OPTIONS] INPUT [OUTPUT]
+
+  Convert PFS files to YAML
+
+  Output filename is optional.
+
+  Default value is input filename with .yml extension
+
+Options:
+  --help  Show this message and exit.
+
+C:\>pfs2yaml Odense.m21fm
+Writing YAML file: Odense.m21fm.yml
+
+C:\>more Odense.m21fm.yml
+---
+! Created     : 2018-01-16 10:31:3
+! DLL id      : C:\Program Files (x86)\DHI\2017\bin\x64\pfs2004.dll
+! PFS version : Apr  4 2017 19:09:27
+
+FemEngineHD:
+  DOMAIN:
+    touched :  1
+    discretization :  2
+    number_of_dimensions :  2
+    number_of_meshes :  1
+    file_name :  .\Input\odense_rough.mesh
+    type_of_reordering :  0
+    number_of_domains :  16
+    coordinate_type :  'UTM-33'
+```
