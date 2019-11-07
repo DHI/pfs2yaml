@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_e470281ee3794f61ab823cac5d3d02b5 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_e470281ee3794f61ab823cac5d3d02b5" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_e470281ee3794f61ab823cac5d3d02b5 = L.map(
+        'map_e470281ee3794f61ab823cac5d3d02b5', {
+        center: [55.8, 12],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_355456affb8747d28503a45fb0e2f168 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+    
+        var marker_c0cc26475c92472497c192a2c939afba = L.marker(
+            [55.96360022598667, 12.00640530070797],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_c0cc26475c92472497c192a2c939afba.bindTooltip(
+            `<div>`
+            + `Arresø Kanal` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3434e52515a546c99e8cc5e0db38db7e = L.marker(
+            [55.877360558793754, 12.057519866061158],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_3434e52515a546c99e8cc5e0db38db7e.bindTooltip(
+            `<div>`
+            + `Havelse Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_627bb78f19994e96b0e006e000c9a218 = L.marker(
+            [55.86388758121321, 12.057499956460479],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_627bb78f19994e96b0e006e000c9a218.bindTooltip(
+            `<div>`
+            + `Græse Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a4a266d5b45e4e1ab1f4956a9516305a = L.marker(
+            [55.78079008201032, 12.08128484562431],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_a4a266d5b45e4e1ab1f4956a9516305a.bindTooltip(
+            `<div>`
+            + `Værebro Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ca88c413d55e448e9c0b4426938db484 = L.marker(
+            [55.70357838151186, 15.103772744669797],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_ca88c413d55e448e9c0b4426938db484.bindTooltip(
+            `<div>`
+            + `Hove Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_96d80611f82946d4b6b9bfdd75363195 = L.marker(
+            [55.689021444861545, 15.104400313507869],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_96d80611f82946d4b6b9bfdd75363195.bindTooltip(
+            `<div>`
+            + `Maglemose Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_85e5d0f573054439979d2163b7dfe891 = L.marker(
+            [55.67398751352139, 12.015508785303105],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_85e5d0f573054439979d2163b7dfe891.bindTooltip(
+            `<div>`
+            + `Langvad Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a9146dedf714418a9d4ce88df72ee980 = L.marker(
+            [55.827060535553926, 12.059041334121659],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_a9146dedf714418a9d4ce88df72ee980.bindTooltip(
+            `<div>`
+            + `Sillebro Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ae859995178f46bb95870df3493a2b31 = L.marker(
+            [55.80568678923936, 12.051034795458651],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_ae859995178f46bb95870df3493a2b31.bindTooltip(
+            `<div>`
+            + `Mademose Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d96e8ac9c10a4707bf2d269f47c8a509 = L.marker(
+            [55.957303733190166, 11.951968040781589],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_d96e8ac9c10a4707bf2d269f47c8a509.bindTooltip(
+            `<div>`
+            + `Melby catchment` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_af89b402201744cf916063f865e9ff76 = L.marker(
+            [55.66538571276849, 11.950737056328823],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_af89b402201744cf916063f865e9ff76.bindTooltip(
+            `<div>`
+            + `Lejre Å` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c5ed8da3c314462c84487d49ccc993b3 = L.marker(
+            [55.649209917369, 11.934396099173478],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_c5ed8da3c314462c84487d49ccc993b3.bindTooltip(
+            `<div>`
+            + `Lejrerenden` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5e801ba11d424cdfaa8019e42285feb4 = L.marker(
+            [55.6590890643325, 11.931837382790214],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_5e801ba11d424cdfaa8019e42285feb4.bindTooltip(
+            `<div>`
+            + `Lundby catchment` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9364374f4abd45fc87b8aad7075a9a14 = L.marker(
+            [55.69278508976173, 11.96024404125654],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_9364374f4abd45fc87b8aad7075a9a14.bindTooltip(
+            `<div>`
+            + `Ørbæk` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6313078f27184c1e8caf6d10387c91a8 = L.marker(
+            [55.7282704787347, 11.985674877755958],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_6313078f27184c1e8caf6d10387c91a8.bindTooltip(
+            `<div>`
+            + `Hønepilsgrøft` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_073e3514642d4d94bef34981aa8ce2b1 = L.marker(
+            [55.73904957169631, 11.990447286647477],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_073e3514642d4d94bef34981aa8ce2b1.bindTooltip(
+            `<div>`
+            + `Selsø` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0cec19246c7f4af5a039e2079c3dbf32 = L.marker(
+            [55.73005847364162, 12.047752591525784],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_0cec19246c7f4af5a039e2079c3dbf32.bindTooltip(
+            `<div>`
+            + `Sønderby catchment` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fe060ed4b77c49daa8963c12d9680e79 = L.marker(
+            [55.88096652686187, 12.007989610296294],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_fe060ed4b77c49daa8963c12d9680e79.bindTooltip(
+            `<div>`
+            + `Hornsherred N catchment` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d94694f15cd44b18bd1d9c1e404ef3c7 = L.marker(
+            [55.915090624850826, 12.043181782820968],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_d94694f15cd44b18bd1d9c1e404ef3c7.bindTooltip(
+            `<div>`
+            + `Ølsted WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_26a85d8a616f41e4b50a2e2d65b716c2 = L.marker(
+            [55.827060535553926, 12.059041334121659],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_26a85d8a616f41e4b50a2e2d65b716c2.bindTooltip(
+            `<div>`
+            + `Frederikssund WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad6258ddacb7405ab4044ac224f43b10 = L.marker(
+            [55.734517919419645, 12.100291888507154],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_ad6258ddacb7405ab4044ac224f43b10.bindTooltip(
+            `<div>`
+            + `Jyllinge WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_37c76be40ce94038902e51eea2c418d4 = L.marker(
+            [55.699491133045406, 12.095430649319074],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_37c76be40ce94038902e51eea2c418d4.bindTooltip(
+            `<div>`
+            + `Risø WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d5eaade277254c099d18b5a61b097041 = L.marker(
+            [55.659091536605395, 12.063554891136077],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_d5eaade277254c099d18b5a61b097041.bindTooltip(
+            `<div>`
+            + `Bjergmarken WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_43b0ab1bcf844d82a3f6968235de2ce0 = L.marker(
+            [55.65608032765061, 14.941213973264745],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_43b0ab1bcf844d82a3f6968235de2ce0.bindTooltip(
+            `<div>`
+            + `Lundby WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_23fe36421c59469ea6de77b3b6eccd22 = L.marker(
+            [55.682964778977954, 14.96933486659856],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_23fe36421c59469ea6de77b3b6eccd22.bindTooltip(
+            `<div>`
+            + `Sæby WWTE` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_37524a85f1584faeaee1754ba23a4820 = L.marker(
+            [55.760600344720025, 15.057588405475425],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_37524a85f1584faeaee1754ba23a4820.bindTooltip(
+            `<div>`
+            + `Hyllingeriis WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6504f1b471c54514978add208dcc5d7c = L.marker(
+            [55.8402633887359, 15.006412035794261],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_6504f1b471c54514978add208dcc5d7c.bindTooltip(
+            `<div>`
+            + `Nr.Dråby WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_51bfc4bd7f2e42b495b794ba385dadf5 = L.marker(
+            [55.79989271306276, 15.039035381165192],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_e470281ee3794f61ab823cac5d3d02b5);
+        
+    
+        marker_51bfc4bd7f2e42b495b794ba385dadf5.bindTooltip(
+            `<div>`
+            + `Tørslev WWTP` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
