@@ -1,6 +1,10 @@
 # PFS2YAML
 
-## Example
+Convert PFS files to YAML or python dictionary.
+
+For a complete example of extracting coordinates of all sources see this [notebook](notebooks/Roskilde%20sources.ipynb).
+
+## Usage
 
 ```python
 Python 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 11:27:44) [MSC v.1900 64 bit (AMD64)] on win32
