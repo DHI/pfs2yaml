@@ -4,6 +4,9 @@ Convert PFS files to YAML or python dictionary.
 
 For a complete example of extracting coordinates of all sources see this [notebook](notebooks/Roskilde%20sources.ipynb).
 
+## Installation
+    pip install https://github.com/DHI/pfs2yaml/archive/master.zip
+
 ## Usage
 
 ```python
