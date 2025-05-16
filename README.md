@@ -1,5 +1,8 @@
 # PFS2YAML
 
+> [!NOTE]
+> This functionality is now part of [MIKE IO](https://github.com/DHI/mikeio)
+
 Convert PFS files to YAML or python dictionary.
 
 For a complete example of extracting coordinates of all sources see this [notebook](notebooks/Roskilde%20sources.ipynb).
